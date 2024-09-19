@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/uninvite/static/css/main.1d766016.css",
-    "main.js": "/uninvite/static/js/main.e403416f.js",
+    "main.js": "/uninvite/static/js/main.8452716d.js",
     "index.html": "/uninvite/index.html",
     "main.1d766016.css.map": "/uninvite/static/css/main.1d766016.css.map",
-    "main.e403416f.js.map": "/uninvite/static/js/main.e403416f.js.map"
+    "main.8452716d.js.map": "/uninvite/static/js/main.8452716d.js.map"
   },
   "entrypoints": [
     "static/css/main.1d766016.css",
-    "static/js/main.e403416f.js"
+    "static/js/main.8452716d.js"
   ]
 }
