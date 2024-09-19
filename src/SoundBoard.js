@@ -6,6 +6,7 @@ const SoundBoard = () => {
 
   useEffect(() => {
     console.log('SoundBoard component mounted');
+    
     const sounds = {
       'q': new Howl({ src: [`${process.env.PUBLIC_URL}/sounds/SG-Guitar-1.mp3`] }),
       'w': new Howl({ src: [`${process.env.PUBLIC_URL}/sounds/SG-Guitar-2.mp3`] }),
@@ -16,13 +17,12 @@ const SoundBoard = () => {
     const handleKeyPress = (event) => {
       const key = event.key.toLowerCase();
       console.log('Key pressed:', key);
+      
       if (sounds[key]) {
-        console.log('Attempting to play sound for key:', key);
         const soundId = sounds[key].play();
-        console.log('Sound ID:', soundId);
         activeSoundsRef.current[key] = soundId;
+        console.log(`Playing sound for key: ${key}`);
       } else if (key === 'escape') {
-        console.log('Escape key pressed, stopping all sounds');
         stopAllSounds();
       }
     };
@@ -30,8 +30,8 @@ const SoundBoard = () => {
     const stopAllSounds = () => {
       console.log('Stopping all sounds');
       Object.entries(activeSoundsRef.current).forEach(([key, soundId]) => {
-        console.log('Stopping sound for key:', key, 'ID:', soundId);
         sounds[key].stop(soundId);
+        console.log(`Stopped sound for key: ${key}`);
       });
       activeSoundsRef.current = {};
     };
