@@ -21,19 +21,23 @@ const SoundBoard = () => {
       if (sounds[key]) {
         const soundId = sounds[key].play();
         activeSoundsRef.current[key] = soundId;
-        console.log(`Playing sound for key: ${key}`);
-      } else if (key === 'escape') {
+        console.log(`Playing sound for key: ${key}, Sound ID: ${soundId}`);
+      } else if (key === ' ') {  // Check for space bar
+        console.log('Space bar pressed, attempting to stop all sounds');
         stopAllSounds();
       }
     };
 
     const stopAllSounds = () => {
       console.log('Stopping all sounds');
+      console.log('Active sounds:', activeSoundsRef.current);
       Object.entries(activeSoundsRef.current).forEach(([key, soundId]) => {
+        console.log(`Attempting to stop sound for key: ${key}, Sound ID: ${soundId}`);
         sounds[key].stop(soundId);
         console.log(`Stopped sound for key: ${key}`);
       });
       activeSoundsRef.current = {};
+      console.log('All sounds should be stopped now');
     };
 
     window.addEventListener('keydown', handleKeyPress);
@@ -48,7 +52,7 @@ const SoundBoard = () => {
   return (
     <div>
       <h1>Press Q, W, E, or R to play sounds!</h1>
-      <p>Press ESC to stop all playing sounds</p>
+      <p>Press SPACE to stop all playing sounds</p>
     </div>
   );
 };
