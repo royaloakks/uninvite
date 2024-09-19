@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/uninvite/static/css/main.1d766016.css",
+    "main.js": "/uninvite/static/js/main.52ac697b.js",
+    "index.html": "/uninvite/index.html",
+    "main.1d766016.css.map": "/uninvite/static/css/main.1d766016.css.map",
+    "main.52ac697b.js.map": "/uninvite/static/js/main.52ac697b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d766016.css",
+    "static/js/main.52ac697b.js"
+  ]
+}
