@@ -5,7 +5,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <SoundBoard />
+      <div className="soundboard-container">
+        <SoundBoard />
+      </div>
     </div>
   );
 }
