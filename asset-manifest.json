@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/uninvite/static/css/main.7caea4ab.css",
+    "main.css": "/uninvite/static/css/main.797c9762.css",
     "main.js": "/uninvite/static/js/main.8b0c4c85.js",
     "static/media/sgbg1-lo.jpg": "/uninvite/static/media/sgbg1-lo.50cd883894fb83a6cd4f.jpg",
     "index.html": "/uninvite/index.html",
-    "main.7caea4ab.css.map": "/uninvite/static/css/main.7caea4ab.css.map",
+    "main.797c9762.css.map": "/uninvite/static/css/main.797c9762.css.map",
     "main.8b0c4c85.js.map": "/uninvite/static/js/main.8b0c4c85.js.map"
   },
   "entrypoints": [
-    "static/css/main.7caea4ab.css",
+    "static/css/main.797c9762.css",
     "static/js/main.8b0c4c85.js"
   ]
 }
