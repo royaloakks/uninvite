@@ -19,6 +19,11 @@ const SoundBoard = () => {
       console.log('Key pressed:', key);
       
       if (sounds[key]) {
+        if (activeSoundsRef.current[key]) {
+          // If the sound is already playing, stop it and restart
+          sounds[key].stop(activeSoundsRef.current[key]);
+          console.log(`Restarting sound for key: ${key}`);
+        }
         const soundId = sounds[key].play();
         activeSoundsRef.current[key] = soundId;
         console.log(`Playing sound for key: ${key}, Sound ID: ${soundId}`);
