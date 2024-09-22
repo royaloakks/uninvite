@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import SoundBoard from './SoundBoard';
 import './App.css';
-import backgroundImage from './images/sgbg1-lo.jpg'; // Add this line
+import backgroundImage from './images/sgbg1-lo.jpg';
 
 function App() {
   const overlayRef = useRef(null);
